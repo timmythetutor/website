@@ -9,21 +9,6 @@
     font-family: "Trebuchet MS", Helvetica, sans-serif; 
 }
 
-.contact {
-    text-align: center;
-    font-family: "Trebuchet MS", Helvetica, sans-serif; 
-    padding-top: 2%;
-    padding-bottom: 2%;
-    color: white;
-}
-
-.contactchild {
-    display: inline;
-}
-
-.align-center {
-    padding-left: 13%;
-}
 .mainButtons {
     color:white;
     padding-left: 3%;
@@ -45,15 +30,15 @@
 
 }
 
-.heading {
-    font-family: "Trebuchet MS", Helvetica, sans-serif; 
-    padding-left: 3%;
-    padding-top: 2%;
-    color: white;
-    text-decoration: bold;
-}
-
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px), (min-height: 1900px) and (max-width: 1300px) {
+    .heading {
+        font-family: "Trebuchet MS", Helvetica, sans-serif; 
+        padding-left: 3%;
+        padding-top: 2%;
+        color: white;
+        text-decoration: bold;
+        font-size: 150%;
+    }
     .text {
         color: white;
         font-family: "Trebuchet MS", Helvetica, sans-serif; 
@@ -62,9 +47,45 @@
         padding-right: 3%;
         font-size: 150%;
     }
+    .photo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 2%;
+        width: 80%;
+    }
+    .contact {
+        text-align: center;
+        font-family: "Trebuchet MS", Helvetica, sans-serif; 
+        padding-top: 2%;
+        padding-bottom: 2%;
+        color: white;
+        font-size: 200%;
+    }
+    .contactchild {
+        text-align: center;
+    }
+    .bullet2 {
+        text-align: left;
+        list-style-type: none;
+        padding: 0%;
+    }
 }
 
 @media only screen and (min-width: 1001px) {
+    .flex {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .home {
+        width: 60%;
+    }
+    .photo {
+        margin-left: 6%;
+        margin-right: 3%;
+        border-radius: 2%;
+    }
     .text {
         color: white;
         font-family: "Trebuchet MS", Helvetica, sans-serif; 
@@ -73,28 +94,33 @@
         padding-left: 3%;
         font-size: 120%;
     }
+    .heading {
+        font-family: "Trebuchet MS", Helvetica, sans-serif; 
+        padding-left: 3%;
+        padding-top: 2%;
+        color: white;
+        text-decoration: bold;
+    }
+    .contact {
+        text-align: center;
+        font-family: "Trebuchet MS", Helvetica, sans-serif; 
+        padding-top: 2%;
+        padding-bottom: 2%;
+        color: white;
+    }
+    .contactchild {
+        display: inline;
+    }
+    .align-center {
+        padding-left: 13%;
+    }
+    .column {
+        width: 30%;
+        padding-left: 2%;
+    }
 }
 
-.bullet {
+.bullet1 {
     list-style-position: inside;
-}
-
-.home {
-    width: 60%;
-}
-
-.flex {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-}
-
-.photo {
-    margin-left: 6%;
-    border-radius: 2%;
-}
-
-.column {
-    width: 30%;
-    padding-left: 2%;
+    font-size: 125%;
 }
